@@ -3,12 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Websocket 101</title>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.dev.js"></script>
 
     <link href="/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>you see me</h1>
+
+    <div id = "mario-chat">
+      <div id="chat-window">
+        <div id="output"></div>
+        </div>
+        <input id="handle" type="text" placeholder="Handle" />
+        <input id="message" type="text" placeholder="Message" />
+        <button id="send">Send</button>
+    </div>
+
     <script src ="/chat.js"></script>
   </body>
 </html>
